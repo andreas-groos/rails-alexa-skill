@@ -44,3 +44,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'evil_icons'
 gem 'alexa_rubykit'
+gem 'alexa_verifier'

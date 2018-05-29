@@ -6,7 +6,19 @@ class AlexaController < ApplicationController
   #
   #
   def ask
+    
+    begin
+      AlexaVerifier.valid!(request)
+    rescue AlexaVerifier::InvalidCertificateURIError, AlexaVerifier::InvalidCertificateError, AlexaVerifier::InvalidRequestError
+      render plain: 'Invalid Request', status: 400 and return
+    end
+
     @input = AlexaRubykit.build_request(params)
+
+    #AlexaVerifier::InvalidCertificateURIError	Raised when the certificate URI does not pass validation.
+    #AlexaVerifier::InvalidCertificateError	Raised when the certificate itself does not pass validation e.g. out of date, does not contain the requires SAN extension, etc.
+    #AlexaVerifier::InvalidRequestError	Raised when the request cannot be verified (not timely, not signed with the certificate, etc.)
+
     output = AlexaRubykit::Response.new
     session_end = (@input.type == "SESSION_ENDED_REQUEST")
 
