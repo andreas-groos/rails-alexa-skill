@@ -1,0 +1,14 @@
+one:
+  id: 1
+  name: alpha
+  email: alpha@test.com
+  password_digest: $2a$10$F7MYMVXKbkAEg61PYMM/zu/sP7bgJGFbFxaL7GgnqeWccx7ttJbwi
+  codeword: 1234
+  amazon_user_identifier: 1
+
+two:
+  id: 2
+  name: beta
+  email: beta@test.com
+  password_digest: probablycantlogin
+  codeword: 4321

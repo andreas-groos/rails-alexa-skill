@@ -1,0 +1,14 @@
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <%= link_to 'My Recipes', recipe_index_path, :class => 'navbar-item' %>
+    </div>
+
+    <div class="navbar-end">
+      <span class="navbar-item">
+        <%= @current_user.name %>
+      </span>
+      <%= link_to 'Sign Out', signout_path, :class => 'navbar-item'%>
+    </div>
+  </div>
+</nav>

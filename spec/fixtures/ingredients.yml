@@ -1,0 +1,35 @@
+one:
+  id: 1
+  recipe_id: 1
+  name: avocado
+  quantity: 1
+  position: 0
+
+two:
+  id: 2
+  recipe_id: 1
+  name: salt
+  quantity: one teaspoon
+  position: 1
+
+three:
+  id: 3
+  recipe_id: 1
+  name: lime
+  quantity: one half
+  position: 2
+
+four:
+  id: 4
+  recipe_id: 2
+  name: chilli powder
+  quantity: 2 tablespoons
+  position: 0
+
+five:
+  id: 5
+  recipe_id: 2
+  name: kidney beans
+  quantity: 1 can
+  position: 1
+

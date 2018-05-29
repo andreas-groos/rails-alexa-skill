@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipes</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <title>Your recipes, repeated back to you by Alexa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Get help with your recipes from Alexa"/>
+
+    <%= stylesheet_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navbar' if @current_user.present? %>
+    <%= yield %>
+
+    <%= evil_icons_sprite %>
+    <%= render 'layouts/footer' %>
+
+    <div id="csrf-token-body" token="<%= form_authenticity_token %>"></div>
+  </body>
+</html>

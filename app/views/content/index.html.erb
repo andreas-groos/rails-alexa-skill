@@ -1,0 +1,33 @@
+<video id="moodvideo" autoplay>
+  <source src="/burner.webm" type="video/mp4">
+  </source>
+</video>
+
+<section style="background-color:rgba(0, 0, 0, 0.4);" class="hero is-dark is-medium is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered ">
+      <h1 class="title animated slideInRight" >
+        Alexa, how much paprika do I add for my chilli recipe?
+      </h1>
+      <br/>
+      <h2 class="animated fadeIn subtitle-fade is-size-3">
+        "One Tablespoon"
+      </h2>
+      <br/>
+      <h2 class="animated fadeIn subtitle-second-fade is-size-3">
+        Alexa helps with <span class="has-text-danger has-text-weight-bold">your</span> recipes.
+      </h2>
+    </div>
+  </div>
+  
+  <div class="hero-foot has-text-centered">
+    <a onclick="document.querySelector('#wizard-container').scrollIntoView({behavior: 'smooth'})" class="is-size-3">Get Started</a>
+    <br/><br/>
+    <a onclick="document.querySelector('#wizard-container').scrollIntoView({behavior: 'smooth'})">
+      <div class="arrow animated infinite bounce">
+      </div>
+    </a>
+  </div>
+</section>
+
+<div id="wizard-container" class="wizard"></div>

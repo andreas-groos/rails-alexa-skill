@@ -1,0 +1,14 @@
+<div class="section">
+  <div class="container recipe-list">
+
+    <% if @current_user.present? && @current_user.amazon_user_identifier.blank? %>
+      <div class="notification is-danger">
+        To Link you Alexa device, please execute the following voice commands.<br/><br/>
+        Alexa, load repeat my recipes.<br/><br/>
+        Alexa, my voice is my passport, <strong><%= @current_user.codeword %></strong>
+      </div>
+    <% end %>
+
+    <div id="recipe-list-container"></div>
+  </div>
+</div>

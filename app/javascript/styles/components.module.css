@@ -1,0 +1,6 @@
+.activeStep {
+  opacity: 1;
+}
+.inactiveStep {
+  opacity: 0.3;
+}

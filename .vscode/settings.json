@@ -1,0 +1,25 @@
+{
+    "workbench.iconTheme": "file-icons-colourless",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "window.zoomLevel": 1.2,
+    "workbench.colorCustomizations": 
+    {
+        "statusBar.background" : "#78aa73",
+        "statusBar.noFolderBackground" : "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "workbench.statusBar.feedback.visible": false,
+    "ruby.lint": {
+        "reek": false,
+        "rubocop": {
+            "only": ["SpaceInsideBlockBraces", "LeadingCommentSpace"],
+            "lint": true,
+            "rails": true
+        },
+        "ruby": true, //Runs ruby -wc
+        "fasterer": false,
+        "debride": false,
+        "ruby-lint": false
+    }
+}

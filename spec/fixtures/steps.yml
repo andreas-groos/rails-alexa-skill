@@ -1,0 +1,23 @@
+one:
+  id: 1
+  recipe_id: 1
+  position: 0
+  description: put the avocado in a bowl
+
+two:
+  id: 2
+  recipe_id: 1
+  position: 1
+  description: add salt and lime juice to bowl
+
+three:
+  id: 3
+  recipe_id: 1
+  position: 2
+  description: mash it up with a fork
+
+four:
+  id: 4
+  recipe_id: 2
+  position: 0
+  description: boil the ingredients
