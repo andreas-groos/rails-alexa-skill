@@ -1,11 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
-import axios from 'axios'
 
-class Disaster extends React.Component {
-
-  render () {
-    return (
+const Disaster = (props) => {
+   return (
       <div>
         <div style={{height: '75px', width: '75px'}}
              className="is-large icon plan-icon">
@@ -13,18 +9,9 @@ class Disaster extends React.Component {
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#ei-exclamation-icon"></use>
           </svg>
         </div>
-        <p className="is-size-5">{this.props.message}</p>
+        <p className="is-size-5">{props.message}</p>
       </div>
     )
-  }
-}
-
-Disaster.defaultProps = {
-  message: 'Stranger'
-}
-
-Disaster.propTypes = {
-  message: PropTypes.string
 }
 
 export default Disaster
